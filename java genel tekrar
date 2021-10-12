@@ -1,0 +1,121 @@
+package kontrol_yapıları;
+
+
+
+import java.util.Scanner;
+
+
+
+public class konrtol_yapıları_odevi {
+
+    
+    public static void main(String[] args) {
+        //odev1- vucut kitle endexi hesaplama
+       /* int boy=0;
+        double kilo=0;
+        Scanner tara=new Scanner(System.in);
+        System.out.println("Vücüt kitle endexi hesaplama programına hoşgeldiniz.!");
+        
+        System.out.println("Lütfen boyunuzu cm cinsinden giriniz:"); 
+        boy=tara.nextInt();
+        
+        System.out.println("Lütfen kilonuzu kg cinsinden giriniz:");
+        kilo=tara.nextDouble();
+        double endex=0;
+        double boyHesapla=(double)boy/100.0;
+        double boyunKaresi=Math.pow(boyHesapla, 2);
+        endex= kilo/ boyunKaresi;
+        System.out.println("bulunan index degeri:"+endex);
+        if(endex<15){
+            System.out.println("çok ciddi derecede düşük kilolu..");
+        }
+        else if(endex>15 &&16>endex){
+            System.out.println("ciddi derecede düşük kilolu");   
+        }
+        else if(16<endex && endex<25){
+            System.out.println("Sağlıklı");
+        }
+                
+        else if(25<endex &&endex<40){
+            System.out.println("kilolu");
+        }
+        
+        else{
+            System.out.println("Obez");
+        }*/
+         /*        
+         int sansliSayi=(int)(Math.random()*99+1);
+         System.out.println("tahmin"+sansliSayi);
+          System.out.println("Lütfen tahmininizi giriniz:");
+        Scanner tara= new Scanner(System.in);
+         int tahmin=tara.nextInt();
+         
+         //87 uretilen sayi
+         int sansliSayiBirinciBasamak=sansliSayi/10;
+          int sansliSayiİkinciBasamak=sansliSayi%10;
+          int tahminEdilenSayiBirinciBasamak=tahmin/10;
+          int tahminEdilenSayiİkinciBasamak=tahmin%10;
+         if(sansliSayi==tahmin){
+             System.out.println("tebrikler 10000 tl kazandınız, sanslı sayı:"+sansliSayi+"sizin tahmininz:"+tahmin);
+             
+         }
+         else if(sansliSayiBirinciBasamak==tahminEdilenSayiİkinciBasamak&&sansliSayiİkinciBasamak==tahminEdilenSayiBirinciBasamak) {
+             System.out.println("tebrikler 5000 tl kazandınız, sanslı sayı:"+sansliSayi+"sizin tahmininz:"+tahmin);
+         }
+         else if(sansliSayiBirinciBasamak==tahminEdilenSayiBirinciBasamak|| sansliSayiBirinciBasamak==tahminEdilenSayiİkinciBasamak
+                 ||sansliSayiİkinciBasamak==tahminEdilenSayiBirinciBasamak&&sansliSayiİkinciBasamak==tahminEdilenSayiİkinciBasamak ){
+         System.out.println("tebrikler 1000 tl kazandınız, sanslı sayı:"+sansliSayi+"sizin tahmininz:"+tahmin);
+         }
+         
+         else{
+             System.out.println("maalesef odul kazanamadınız.."+"tutulan sayi: "+sansliSayi);
+         }
+         */
+         
+         //odev3- kullanıcıdan girilen 5 sayının arasından en büyüğünü bulduran program
+        /* int sayi=0;
+         int sayac;
+          int enBuyuk=0;
+         Scanner scan= new Scanner(System.in);
+         for(sayac=1;sayac<=5;sayac++){
+             System.out.println("lutfen "+sayac+". sayiyi giriniz:");
+             sayi=scan.nextInt();
+         }
+         if(sayi>=enBuyuk){
+            enBuyuk=sayi;
+         }
+           System.out.println("en buyuk: "+ enBuyuk);*/
+        //sayı tahmin etme oyunu
+        System.out.println("******** SAYI TAHMİN ETME OYUNUNA HOŞGELDİNİZ!********");
+                int sayac=0;
+                int tahmin;
+                Scanner scan= new Scanner (System.in);
+                int sayi=1+(int)(Math.random()*10);
+               int hak=5;
+               while(hak>0){
+               hak--;
+               sayac++;
+               
+                   System.out.println("lutfen tahmininizi giriniz:");
+                   tahmin=scan.nextInt();
+                   if(sayi==tahmin){
+                       System.out.println("Tebrikler tahmininiz doğru! "+sayac+". defada bildiniz");
+                       break;
+                   }
+                   
+                   else if(sayi>tahmin){
+                       System.out.println("tahmininiz çok düşük..");
+                   }
+                   else if(sayi<tahmin){
+                       System.out.println("tahmininiz çok yüksek..");
+                   }
+                   if (hak==0){
+                       System.out.println("hakkınız bitti Tekrar deneyin.."+" tutulan sayi:"+sayi);
+                       break;
+                   
+                   }
+               }
+        
+    }
+    
+}
